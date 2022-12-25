@@ -1,0 +1,5 @@
+firebase_admin
+requests
+bs4
+urllib.request
+firebase-admin google-cloud-firestore
