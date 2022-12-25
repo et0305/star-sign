@@ -1,15 +1,12 @@
 import firebase_admin
 from firebase_admin import credentials, firestore
-cred = credentials.Certificate("star sign/serviceAccountKey.json")
+cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 import requests as req
 from bs4 import BeautifulSoup
 import urllib.request as urequest
-#import os
-#import pyrebase
-local_path="star sign"
 
 id=["牡羊座","金牛座","雙子座","巨蟹座","獅子座","處女座","天秤座","天蠍座","射手座","魔羯座","水瓶座","雙魚座"]
 pics=[]
